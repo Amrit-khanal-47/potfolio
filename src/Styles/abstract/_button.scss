@@ -1,0 +1,23 @@
+.button{
+    padding: 17px 26px;
+    font-size: $text-regular;
+    line-height: 1;
+    font-weight: $font-medium;
+    border-radius: 0.5rem;
+    &-primary {
+        background-color: $primary-color;
+        color: $secondary-color;
+        border: 1px solid $primary-color;
+        transition: padding 0.4s ease;
+
+        &:hover {
+            background-color: $secondary-color;
+            color: $color-white;
+            padding-right: 32px;
+            padding-left: 32px;
+        }
+     
+
+       
+    }
+}

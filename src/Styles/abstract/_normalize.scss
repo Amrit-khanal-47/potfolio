@@ -1,0 +1,88 @@
+h1{
+    font-size: $tilte;
+    font-weight: $font-bold;
+
+    @include responsive-for(lg) {
+        font-size: $heading;
+    }
+    @include responsive-for(sm) {
+        font-size: $subhead;
+    }
+}
+
+h2{
+    font-size: $heading;
+    font-weight: $font-semibold;
+    color: $color-head;
+    line-height: 1.25;
+    @include responsive-for(lg) {
+        font-size: $subhead;
+    }
+    @include responsive-for(sm) {
+        font-size: $section-head;
+    }
+}
+
+h3{
+    font-size: $subhead;
+    font-weight: $font-medium;
+    color: $secondary-color;
+ @include responsive-for(lg) {
+        font-size: $section-head;
+    }
+    @include responsive-for(sm) {
+        font-size: $small-heading;
+    }
+    
+}
+
+h4{
+    font-size: $section-head;
+    font-weight: $font-medium;
+    color: $text-dark;
+     @include responsive-for(lg) {
+        font-size: $small-heading
+    }
+    @include responsive-for(sm) {
+        font-size: $text-large;
+    }
+
+}
+h5{
+    font-size: $small-heading;
+    font-weight: $font-medium;
+    color: $accordion-title-dark;
+    line-height: 1;
+     @include responsive-for(lg) {
+        font-size: $text-large;
+    }
+    @include responsive-for(sm) {
+        font-size: $text-medium;
+}}
+
+p{
+    color: $color-body;
+    font-size: $text-regular;
+}
+
+p[role="small"]{
+    font-size: $text-small;
+}
+p[role="medium"]{
+    font-size: $text-medium;
+    @include responsive-for(sm) {
+        font-size: $text-regular;
+    }
+}
+p[role="large"]{
+    font-size: $text-large;
+    @include responsive-for(sm) {
+        font-size: $text-medium;
+    }
+}
+
+li{font-size: $text-regular;}
+
+section[role="individual-component"]{
+    padding: 50px 0 ;
+}

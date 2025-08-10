@@ -1,0 +1,95 @@
+.experienceWrapper{
+    position: relative;
+    padding: 0px 20px;
+    background-color: #f7f7f7;
+    gap: 20rem;
+    &-header{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    &-experience{
+        // position: relative;
+       
+  
+        
+        &-individual{
+           display: inline; 
+                   
+
+          
+        }
+    }
+}
+
+.bordersection{
+            height: 100vh;
+            width: 50%;
+            position: absolute;
+            border-left: 3px solid $color-head;
+            left: 3rem;
+            padding-left: 5rem;
+            margin-top: 5rem;
+           background-color: #f7f7f7;
+
+
+
+            &-skill{
+                width: 80%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+               
+               
+               
+                &-ui{
+                    width: 92%;
+                    height: 30%;
+                    border-radius: 5px ;
+                    background-color: $color-white;
+                     display: flex;
+                     justify-content: space-between;
+
+                     svg{
+                        font-size: 5rem;
+                        width: 15%;
+                        color: $primary-color;
+                        // margin: 1rem;
+                     }
+                     &-info{
+                        width: 70%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                      
+                        
+                       
+
+               
+               
+                }
+            }
+          }}
+          .circle{
+            height: 100vh;
+             position: absolute;
+             z-index: 3;
+             left: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 5rem;
+            span{
+                background-color: $secondary-color;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                svg{
+                    font-size: 5px;
+                    color: $primary-color;
+                }
+            }
+
+        }
