@@ -1,0 +1,25 @@
+.hirewrapper{
+background-image: url('/hire-bg.jpg');
+background-size: cover;
+padding: 100px 0px;
+width: 100%;
+background-attachment: fixed;
+p{
+    font-size: 36px;
+    color: $color-white;
+    font-weight:$font-bold ;
+    text-align: center;
+}
+&-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 25px;
+  
+}
+svg{
+    font-size: 60px;
+    color: $primary-color;
+    cursor: pointer;
+}
+}

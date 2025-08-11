@@ -4,6 +4,8 @@ import HeroSection from './Components/HeroSection'
 import Experience from './Components/Experience'
 import About from './Components/About'
 import Sercices from './Components/Services'
+import Hire from './Components/hire'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,10 +20,10 @@ function App() {
       
 
           <HeroSection />
-          <Experience />
-         {/* <About />
-         <Sercices /> */}
-
+          {/* <Experience /> */}
+         <About />
+           <Sercices />
+          <Hire/>
 
      </main>
      </div>
