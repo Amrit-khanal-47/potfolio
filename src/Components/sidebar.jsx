@@ -7,6 +7,39 @@ import { RiDoubleQuotesL } from "react-icons/ri";
 import { GiDiscGolfBag } from "react-icons/gi";
 import { BiSolidMessageSquareDetail } from "react-icons/bi";
 function Sidebar() {
+
+  const MenuArrey=[
+    {
+      icon:<IoHome/>,
+      name:"Home",
+    },
+     {
+      icon: <FaAddressCard/>,
+      name:"About",
+    },
+     {
+      icon:  <FaRectangleList/>,
+      name:"Services",
+    },
+     {
+      icon:<GiDiscGolfBag/>,
+      name:"Potfolio",
+    },
+     {
+      icon:  <RiDoubleQuotesL/>,
+      name:"Testimonial",
+    },
+     {
+      icon:<BiSolidMessageSquareDetail/>,
+      name:"Blog",
+    },
+     {
+      icon:<MdEmail/>,
+      name:"Contact",
+    },
+
+  ];
+
   return (
 <>
 <div className='sidebarwrapper'>
@@ -17,27 +50,13 @@ function Sidebar() {
 
 <div className='sidebarwrapper-content'>
   <ul className='sidebarwrapper-content-menu '>
-<li>
-  <IoHome/><span>Home</span>
-</li>
-<li>
-  <FaAddressCard/><span>About</span>
-</li>
-<li>
-  <FaRectangleList/><span>Service</span>
-</li>
-<li>
-  <GiDiscGolfBag/><span>Potfolio</span>
-</li>
-<li>
-  <RiDoubleQuotesL/><span>Testimonial</span>
-</li>
-<li>
-  <BiSolidMessageSquareDetail/><span>Blog</span>
-</li>
-<li>
-  <MdEmail/><span>Contact</span>
-</li>
+
+    {MenuArrey.map((item, index)=>
+   
+   <li key={index}>
+  {item.icon}<span>{item.name}</span>
+</li>   
+   )}
 </ul>
 <p>Copyright @ AMRIT</p>
 </div></div>

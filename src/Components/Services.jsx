@@ -1,12 +1,14 @@
 import React from 'react'
 import { SlArrowRight } from "react-icons/sl";
 import { PiBezierCurveBold } from "react-icons/pi";
+import Header from './Header';
 function Services() {
   return (
   <section role='individual-component' className='ServicesWrapper'>
 <div className="ServicesWrapper-heading">
-  <h2>My Resume</h2>
-<h3>Education & Experience</h3>
+
+
+    <Header heading="My Resume" subheading="Education & Experience"/>
 </div>
 <div className="ServicesWrapper-content">
   <div className="ServicesWrapper-content-item">

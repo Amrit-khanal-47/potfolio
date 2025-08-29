@@ -5,6 +5,8 @@ import Experience from './Components/Experience'
 import About from './Components/About'
 import Sercices from './Components/Services'
 import Hire from './Components/hire'
+import Slide from './Components/Slide'
+
 
 
 function App() {
@@ -21,10 +23,11 @@ function App() {
 
           <HeroSection />
           {/* <Experience /> */}
-         <About />
+         <About heading="About Me" />
            <Sercices />
           <Hire/>
-
+          <Slide/>
+         
      </main>
      </div>
     </>

@@ -8,6 +8,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { SlCalender } from "react-icons/sl";
 import { TbBulb } from "react-icons/tb";
 import { BsEmojiSunglasses } from "react-icons/bs";
+import Header from './Header';
 
 
 function About() {
@@ -19,8 +20,10 @@ function About() {
             <div className="aboutwrapper-me-image">  <img src={Image}/></div>
            
  <div className="aboutwrapper-me-info">
-                <h2>About Me</h2>
-                <h3>Creative Designer</h3>
+               
+                <Header heading="About Me" subheading="Creative Designer"/>
+
+                
                 <p>I am dedicated his life to learning what makes humans tick. He studies, researches and reads everything hecan, and shares his findings with his clients. His philosophy is to learn, test, analyse, improve and re-test. His motto is stay agile. I'm a Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco.<br></br>
                 I code and create web elements for amazing people around the world. I like work with new people. New people new Experiences.</p>
                 <div className="aboutwrapper-me-info-contact">
