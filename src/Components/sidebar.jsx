@@ -6,36 +6,36 @@ import { MdEmail } from "react-icons/md";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { GiDiscGolfBag } from "react-icons/gi";
 import { BiSolidMessageSquareDetail } from "react-icons/bi";
-function Sidebar() {
+function Sidebar(activecomponent,scrollToComponent) {
 
   const MenuArrey=[
     {
       icon:<IoHome/>,
-      name:"Home",
+      name:"hero",
     },
      {
       icon: <FaAddressCard/>,
-      name:"About",
+      name:"about",
     },
      {
       icon:  <FaRectangleList/>,
-      name:"Services",
+      name:"services",
     },
      {
       icon:<GiDiscGolfBag/>,
-      name:"Potfolio",
+      name:"potfolio",
     },
      {
       icon:  <RiDoubleQuotesL/>,
-      name:"Testimonial",
+      name:"testimonial",
     },
      {
       icon:<BiSolidMessageSquareDetail/>,
-      name:"Blog",
+      name:"blog",
     },
      {
       icon:<MdEmail/>,
-      name:"Contact",
+      name:"contact",
     },
 
   ];
@@ -53,7 +53,7 @@ function Sidebar() {
 
     {MenuArrey.map((item, index)=>
    
-   <li key={index}>
+   <li key={index} onClick={()=>{scrollToComponent(item.name);}} className={`sidebarwrapper-content-menu-item ${activecomponent===item.id ? "active" :""}`}>
   {item.icon}<span>{item.name}</span>
 </li>   
    )}

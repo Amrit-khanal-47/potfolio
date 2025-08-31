@@ -4,7 +4,7 @@ import { PiBezierCurveBold } from "react-icons/pi";
 import Header from './Header';
 function Services() {
   return (
-  <section role='individual-component' className='ServicesWrapper'>
+  <section role='individual-component' className='ServicesWrapper' id='services'>
 <div className="ServicesWrapper-heading">
 
 

@@ -6,28 +6,55 @@ import About from './Components/About'
 import Sercices from './Components/Services'
 import Hire from './Components/hire'
 import Slide from './Components/Slide'
+import Form from './Components/Form'  
+import { useEffect } from 'react'
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [activecomponent ,setactivecomponent]=useState("");
 
+  useEffect(()=>{
+    const handlescroll=()=>{
+      const section=["hero","about","services"];
+      let currentSection="";
+
+      section.forEach((section)=>{
+        const sectionTop=section.offsetTop;
+        const sectionheight=section.clientHeight;
+
+        if(window.screenY>= sectionTop && window.scrollY<sectionTop+sectionheight){
+          currentSection=section.getElementById("id");
+        }
+      });
+      setactivecomponent(currentSection);
+    };
+    window.addEventListener("scroll",handlescroll);
+    return()=>{
+      window.removeEventListener("scroll",handlescroll);
+    };
+  },[]);
+
+const scrollToComponent =(id)=>{
+  document.getElementById(id).scrollIntoView({behavior:"smooth"});
+}
   return (
     <>
     <div className='maincontainer'>
       <div className='maincontainer-sidebar'>
-     <Sidebar />
+     <Sidebar activecomponent={activecomponent} scrollToComponent={scrollToComponent} />
      </div>
      <main className='maincontainer-content'>
       
-
-          <HeroSection />
+<section id="hero"><HeroSection /></section>
+          
           {/* <Experience /> */}
-         <About heading="About Me" />
-           <Sercices />
+          <section id="about"><About heading="About Me" /></section>
+         
+        <section id="services"><Sercices /></section>   
           <Hire/>
           <Slide/>
-         
+        <Form/>
      </main>
      </div>
     </>

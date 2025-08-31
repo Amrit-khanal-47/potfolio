@@ -7,7 +7,7 @@ import { IoBasketballOutline } from "react-icons/io5";
 function HeroSection() {
   return (
     <>
-    <section className="heroSectionWrapper">
+    <section className="heroSectionWrapper" id='hero'>
       <div className="heroSectionWrapper-coloroverlay">
       
             <span className='heroSectionWrapper-gmailIcon'>

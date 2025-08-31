@@ -15,7 +15,7 @@ function About() {
   return (
     <>
    
-    <section   className='aboutwrapper'>
+    <section   className='aboutwrapper' id='about'>
         <div className="aboutwrapper-me">
             <div className="aboutwrapper-me-image">  <img src={Image}/></div>
            
