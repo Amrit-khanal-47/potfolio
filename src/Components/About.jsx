@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from '../Assets/sidebar.jpg'
+import Image from '../assets/sidebar.jpg'
 import { BsPersonFill } from "react-icons/bs";
 import { IoLogoSkype,IoIosGlobe } from "react-icons/io";
 import { CgMail } from "react-icons/cg";
