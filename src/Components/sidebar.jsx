@@ -1,4 +1,4 @@
-import sidebarimage from '../Assets/sidebar.jpg'
+import sidebarImage from "../Assets/sidebar.jpg";
 import { IoHome } from "react-icons/io5";
 import { FaAddressCard } from "react-icons/fa6";
 import { FaRectangleList } from "react-icons/fa6";
