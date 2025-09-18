@@ -6,6 +6,7 @@ import { MdEmail } from "react-icons/md";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { GiDiscGolfBag } from "react-icons/gi";
 import { BiSolidMessageSquareDetail } from "react-icons/bi";
+import { BrowserRouter, Link } from 'react-router';
 function Sidebar(activecomponent,scrollToComponent) {
 
   const MenuArrey=[
@@ -59,6 +60,7 @@ function Sidebar(activecomponent,scrollToComponent) {
    )}
 </ul>
 <p>Copyright @ AMRIT</p>
+<BrowserRouter><Link to="https://www.facebook.com" >facebook</Link></BrowserRouter>
 </div></div>
 
 </>

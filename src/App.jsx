@@ -7,6 +7,7 @@ import Sercices from './Components/Services'
 import Hire from './Components/hire'
 import Slide from './Components/Slide'
 import Form from './Components/Form'  
+import Footer from './Components/Footer'
 import { useEffect } from 'react'
 
 
@@ -53,8 +54,7 @@ const scrollToComponent =(id)=>{
          
         <section id="services"><Sercices /></section>   
           <Hire/>
-          <Slide/>
-        <Form/>
+       <Footer/>
      </main>
      </div>
     </>
