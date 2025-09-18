@@ -45,7 +45,7 @@ function Sidebar(activecomponent,scrollToComponent) {
 <>
 <div className='sidebarwrapper'>
 <div className='sidebarwrapper-logo'>
-  <img src={sidebarimage}/>
+  <img src={sidebarImage}/>
 </div>
 <button className='sidebarwrapper-button'>AMRIT</button>
 
